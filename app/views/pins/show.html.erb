@@ -9,7 +9,10 @@
   <strong>Image:</strong>
   <%= @pin.image %>
 </p>
-
+<div class="field">
+    <%= @pin.image_url if @pin.image? %>
+    <%= f.file_field :image %>
+    <%= f.hidden_field :image_cache %></div>
 <p>
   <strong>Board:</strong>
   <%= @pin.board_id %>

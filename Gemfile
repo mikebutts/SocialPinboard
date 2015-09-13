@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
-
+gem 'rmagick'
+gem 'carrierwave'
 gem 'friendly_id', '~> 5.1.0' 
 gem 'devise'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

@@ -18,6 +18,7 @@
         <td><%= pin.name %></td>
         <td><%= pin.image %></td>
         <td><%= pin.board_id %></td>
+        <%=link_to(image_tag(pin.image.url, :width=>"200", :height=>"200"), pin) %>
         <td><%= link_to 'Show', pin %></td>
         <td><%= link_to 'Edit', edit_pin_path(pin) %></td>
         <td><%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %></td>
